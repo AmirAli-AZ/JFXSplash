@@ -8,6 +8,7 @@ import javafx.beans.property.ReadOnlyObjectProperty;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -129,6 +130,11 @@ public class JFXSplash {
 
         public SplashBuilder setLayout(Parent root){
             this.root = root;
+            return this;
+        }
+
+        public SplashBuilder addIcons(Image... images){
+            stage.getIcons().addAll(images);
             return this;
         }
 
