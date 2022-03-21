@@ -5,7 +5,9 @@ a simple library to create splash screen for javafx applications
 
 Create a custom splash screen
 
-If you use `.setLayout(Parent root)`, the library will automatically create a custom splash screen; if not, it will set the default.
+If you use `.setLayout(Parent root)`, the library will automatically create a custom splash screen.
+
+if not, it will set the default.
 
 ```java
 var loader = new FXMLLoader(getClass().getResource("splash-view.fxml"));
