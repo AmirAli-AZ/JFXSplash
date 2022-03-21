@@ -63,14 +63,14 @@ public class JFXSplash {
     }
 
     public void stop(){
+        if (mainStage.isShowing())
+            throw new IllegalStateException("Cannot stop splash screen once stage has been set visible");
         if (timeline.getCurrentTime().lessThan(duration)){
             for (EventListener listener : listeners)
                 listener.onFinish();
             timeline.stop();
             mainStage.show();
             stage.close();
-        }else {
-            throw new IllegalStateException("splash screen not showing");
         }
     }
 
