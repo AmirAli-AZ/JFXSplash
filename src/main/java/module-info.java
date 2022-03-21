@@ -1,7 +1,7 @@
 module com.amirali.jfxsplash {
     requires javafx.controls;
     requires javafx.fxml;
-    requires annotations;
+    requires org.jetbrains.annotations;
 
     opens com.amirali.jfxsplash.controllers to javafx.fxml;
     exports com.amirali.jfxsplash;
