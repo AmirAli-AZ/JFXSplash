@@ -2,8 +2,6 @@ package com.amirali.jfxsplash.jfxsplashdemo;
 
 import com.amirali.jfxsplash.JFXSplash;
 import javafx.application.Application;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
