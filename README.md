@@ -40,3 +40,4 @@ var splash = new JFXSplash.SplashBuilder(stage)
 |getLayout()|get applied custom view|
 |getListeners()|get list of event listeners|
 |currentTimeProperty()|get current time property at runtime|
+|getStage()|get splash screen window|
