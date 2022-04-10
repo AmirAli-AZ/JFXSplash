@@ -83,6 +83,10 @@ public class JFXSplash {
         return timeline.currentTimeProperty();
     }
 
+    public Stage getStage() {
+        return stage;
+    }
+
     public static class SplashBuilder {
         private Stage mainStage;
         private Duration duration = Duration.millis(2000);
